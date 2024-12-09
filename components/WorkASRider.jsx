@@ -27,14 +27,16 @@ const WorkASRider = () => {
         />
         
         <ImageCard
+        
           imageUrl={
-            " https://media.istockphoto.com/id/942207044/photo/youre-here-quicker-than-i-expected.jpg?s=612x612&w=0&k=20&c=IkLHdJ0VuB-1YcZ04iS50MAdbHWoxpgm6YGTpyPCVsU= "
+            "/assets/delivary.jpg "
           }
           text={"Ride with us"}
           description={
             "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos doloribus consectetur"
           }
         />
+     
       </div>
     </Wrapper>
   );
