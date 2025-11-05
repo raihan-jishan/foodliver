@@ -10,3 +10,7 @@
 .fancy-radius {
   border-radius: 100% 0% 92% 8% / 15% 63% 37% 85%;
 }
+
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+}

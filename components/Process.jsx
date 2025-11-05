@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Proccess = () => {
+const Process = () => {
   return (
     <div className=" ">
       {/* charector image */}
@@ -37,4 +37,4 @@ const Proccess = () => {
   );
 };
 
-export default Proccess;
+export default Process;

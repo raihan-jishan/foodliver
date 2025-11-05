@@ -1,22 +1,15 @@
 export const navLinks = [
-    {
-      label: "Home",
-      route: "/",
-    },
-    {
-      label: "About",
-      route: "/",
-    },
-    {
-      label: "Categories",
-      route: "/",
-    },
-    {
-      label: "Blog",
-      route: "/",
-    },
-    {
-      label: "Contact",
-      route: "/",
-    },
-  ];
+  {
+    label: "Home",
+    route: "/",
+  },
+
+  {
+    label: "ShopNow",
+    route: "/",
+  },
+  {
+    label: "Blog",
+    route: "/",
+  },
+];

@@ -15,28 +15,26 @@ const WorkASRider = () => {
         </p>
       </div>
       {/* partner | Ride with us box */}
-      <div className="  mt-6 p-4 flex items-center justify-center gap-5 max-lg:flex-col max-lg:gap-10">
+      <div className="  mt-6 p-4 flex items-center justify-center gap-8 max-lg:flex-col max-lg:gap-10">
         <ImageCard
           imageUrl={
             "https://media.istockphoto.com/id/1365436662/photo/successful-partnership.jpg?s=612x612&w=0&k=20&c=B1xspe9Q5WMsLc7Hc9clR8MWUL4bsK1MfUdDNVNR2Xg="
           }
-          text={"Partner with us"}
+          text={"Become a Merchant"}
           description={
             "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos doloribus consectetur"
           }
+          varient={'merchant'}
         />
-        
+
         <ImageCard
-        
-          imageUrl={
-            "/assets/delivary.jpg "
-          }
-          text={"Ride with us"}
+          imageUrl={"/assets/delivary.jpg "}
+          text={"Become a Rider"}
           description={
             "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos doloribus consectetur"
           }
+          varient={'rider'}
         />
-     
       </div>
     </Wrapper>
   );

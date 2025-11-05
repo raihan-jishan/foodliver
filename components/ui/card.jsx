@@ -26,34 +26,60 @@ export const InfoCard = ({ title, icon, description, fancyBorder }) => {
 };
 
 // deal card
-export const DealCard = ({icon, title, description}) => {
+export const DealCard = ({ icon, title, description }) => {
   return (
-    <div class="max-w-sm p-4 rounded-[2rem] bg-gray-600  shadow-black/20 shadow-2xl">
-       <div className="bg-emerald-400/70  rounded-full w-12 p-1">{icon}</div>
+    <div class="max-w-sm p-4 rounded-[2rem] bg-green-200    shadow">
+      <div className="bg-emerald-400/70  rounded-full w-12 p-1">{icon}</div>
       <a href="#">
-        <h5 class="mb-2 mt-2 text-2xl  font-semibold tracking-tight text-gray-900 dark:text-black">
+        <h5 class="mb-2 mt-2 text-2xl  font-medium tracking-tight text-gray-950 dark:text-black">
           {title}
         </h5>
       </a>
-      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-      {description}
-      </p> 
+      <p class="text-sm mb-3 font-normal text-gray-600 dark:text-gray-400">
+        {description}
+      </p>
     </div>
   );
 };
 
 // Image card
-export const ImageCard = ({ imageUrl, text, description }) => {
+export const ImageCard = ({ imageUrl, text, description, varient }) => {
   return (
-    <div className=" w-[45%]  bg-emerald-50 rounded overflow-hidden shadow-lg max-lg:w-full">
-      <Image className="w-full h-fit " src={imageUrl} width={500} height={400} alt="image was not found!" />
-      <div className="px-6 py-4">
+    <div className=" w-[45%]   bg-white rounded overflow-hidden shadow  border-2 border-gray-50 max-lg:w-full">
+      <Image
+        className="w-full h-fit "
+        src={imageUrl}
+        width={500}
+        height={400}
+        alt="image was not found!"
+      />
+      <div className="px-4 py-4">
         <div className="font-bold text-2xl mb-2">{text}</div>
         <p className="text-gray-700 text-base">{description}</p>
       </div>
-      <div className="  ">
-        <Button fontMedium heroPadding label={"Work with Us"} roundedMedium icon={<GrNetworkDrive size={26}/>}  />
+      <div className="flex items-center justify-center p-2">
+        <Button
+          heroPadding
+          label={
+            varient === "merchant"
+              ? "Join As Merchant"
+              : varient === "rider"
+              ? "Join As Rider"
+              : null
+          }
+          roundedMedium
+        />
       </div>
+    </div>
+  );
+};
+
+export const TownCard = ({ label, higligts }) => {
+  return (
+    <div className="w-[20%] max-lg:w-full max-lg:p-5 max-lg:flex max-lg:items-center max-lg:justify-center  ">
+      <h1 className="text-3xl font-semibold max-lg:text-4xl  ">
+        <span className="font-bold text-green-500  ">{higligts}</span> {label}
+      </h1>
     </div>
   );
 };

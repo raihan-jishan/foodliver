@@ -1,39 +1,8 @@
-import Link from "next/link";
-const Button = ({
-  path,
-  label,
-  icon,
-  paddingMedium,
-  roundedFull,
-  roundedMedium,
-  customBg,
-  heroPadding, 
-  fontMedium,
-  customStyle
-}) => {
+const Button = ({ label, icon }) => {
   return (
-    <Link
-      href={path ? path : "/"}
-      className={`${fontMedium ? 'font-semibold' : ''} flex items-center justify-center text-center ${
-        customBg
-          ? "bg-emerald-900 font-semibold text-black"
-          : "bg-emerald-500  text-white dark:text-black"
-      }   hover:bg-black/70  flex gap-2       max-lg:gap-2 max-lg:rounded-full    ${
-        paddingMedium
-          ? "p-5 px-12"
-          : heroPadding
-          ? "p-5 px-12 max-lg:p-4 max-lg:px-3 "
-          : "p-3 px-4"
-      }  ${
-        roundedMedium
-          ? "rounded-md"
-          : roundedFull
-          ? "rounded-full"
-          : "rounded-xl"
-      }  ${customStyle}`}
-    >
+    <div className="bg-green-400 hover:bg-green-400/90 hover:scale-95 transition-all duration-300 cursor-pointer p-3 px-3 max-lg:px-2 border-2 border-black/50  rounded-full font-medium flex items-center gap-1">
       {label} {icon}
-    </Link>
+    </div>
   );
 };
 
